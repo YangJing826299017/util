@@ -7,6 +7,7 @@ import java.util.Map;
 import yj.util.SQLUtil;
 import yj.util.SQLUtil.SQLNode;
 
+@SuppressWarnings({"unchecked","rawtypes"})
 public class Test {
 
 	public static void main(String[] args) {
