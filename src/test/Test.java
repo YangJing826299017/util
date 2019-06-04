@@ -11,7 +11,6 @@ public class Test {
 
 	public static void main(String[] args) {
 		Map map=new HashMap();
-		/*
 		// string =
 		map.put("userName","张三");
 		map.put("_type_userName","string");
@@ -27,11 +26,16 @@ public class Test {
 		map.put("_type_age","integer");
 		map.put("_sign_age", "less");
 		
-		//weight
+		//weight float
 		map.put("weight","60");
 		map.put("_type_weight","float");
 		map.put("_sign_weight", "greaterAndEqual");
-		*/
+
+		//money double
+        map.put("money","8000.0");
+        map.put("_type_money","double");
+        map.put("_sign_money","lessAndEqual");
+
 		SQLUtil sqlUtil=new SQLUtil();
 		SQLNode node=sqlUtil.getDeleteSql(map,null,"User");
 		

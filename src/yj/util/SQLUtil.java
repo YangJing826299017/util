@@ -87,6 +87,9 @@ public class SQLUtil {
 		if(paramType.equalsIgnoreCase("Float")){
 			return Float.parseFloat(paramValue);
 		}
+		if(paramType.equalsIgnoreCase("Double")){
+			return Double.parseDouble(paramValue);
+		}
 		return null;
 	}
 	
